@@ -7,7 +7,6 @@ import {
 	moreOverflowVisibilityClass,
 	navItemVisibilityClass,
 	navigationItems,
-	type NavigationItem,
 } from "@/components/layout/header/navigation-data";
 import {
 	DropdownMenu,
@@ -29,6 +28,7 @@ import {
 	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import { type NavigationItem } from "@/types/layout";
 
 const topLinkClass = cn(
 	navigationMenuTriggerStyle(),

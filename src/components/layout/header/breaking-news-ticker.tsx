@@ -1,12 +1,9 @@
 import Link from "next/link";
 import { LuRadio } from "react-icons/lu";
 import { HiMiniStop } from "react-icons/hi2";
-import {
-	breakingNewsItems,
-	type BreakingNewsItem,
-} from "@/components/layout/header/navigation-data";
+import { breakingNewsItems } from "@/components/layout/header/navigation-data";
 import { cn } from "@/lib/utils";
-import { BreakingNewsTickerProps } from "@/types/layout";
+import type { BreakingNewsItem, BreakingNewsTickerProps } from "@/types/layout";
 
 export function BreakingNewsTicker({
 	items = breakingNewsItems,

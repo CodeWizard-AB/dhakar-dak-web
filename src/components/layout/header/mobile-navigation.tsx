@@ -6,7 +6,6 @@ import Logo from "@/components/layout/common/logo";
 import {
 	moreNavigationItems,
 	navigationItems,
-	type NavigationItem,
 } from "@/components/layout/header/navigation-data";
 import {
 	Accordion,
@@ -25,6 +24,7 @@ import {
 	SheetTrigger,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { type NavigationItem } from "@/types/layout";
 
 export function MobileNavigation() {
 	return (
