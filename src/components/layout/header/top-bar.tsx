@@ -10,7 +10,7 @@ import {
 	TooltipContent,
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { headerSettings } from "@/components/layout/header/navigation-data";
+import { headerSettings } from "@/lib/constants/navigation-data";
 
 export function TopBar() {
 	const { dateLabel, languages, utilityLinks, socialLinks } = headerSettings;

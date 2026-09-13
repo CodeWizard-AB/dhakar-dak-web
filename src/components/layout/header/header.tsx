@@ -1,9 +1,6 @@
 import { MobileHeader } from "@/components/layout/header/mobile-header";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { TopBar } from "./top-bar";
-import { MainHeader } from "./main-header";
-import { PrimaryNavigation } from "./primary-navigation";
-import { BreakingNewsTicker } from "./breaking-news-ticker";
+import DesktopHeader from "./desktop-header";
 
 export default function Header() {
 	return (
@@ -13,10 +10,7 @@ export default function Header() {
 					<MobileHeader />
 				</div>
 				<div className="hidden lg:block">
-					<TopBar />
-					<MainHeader />
-					<PrimaryNavigation />
-					<BreakingNewsTicker />
+					<DesktopHeader />
 				</div>
 			</header>
 		</TooltipProvider>

@@ -6,7 +6,7 @@ import Logo from "@/components/layout/common/logo";
 import {
 	moreNavigationItems,
 	navigationItems,
-} from "@/components/layout/header/navigation-data";
+} from "@/lib/constants/navigation-data";
 import {
 	Accordion,
 	AccordionContent,

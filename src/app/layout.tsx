@@ -18,7 +18,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 			suppressHydrationWarning
 			className={cn("h-full", "antialiased", inter.className)}
 		>
-			<body className="min-h-full flex flex-col">
+			<body>
 				<Header />
 				<main>{children}</main>
 			</body>

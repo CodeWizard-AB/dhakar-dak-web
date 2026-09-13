@@ -7,7 +7,7 @@ import {
 	moreOverflowVisibilityClass,
 	navItemVisibilityClass,
 	navigationItems,
-} from "@/components/layout/header/navigation-data";
+} from "@/lib/constants/navigation-data";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -78,10 +78,7 @@ export function PrimaryNavigation() {
 function SectionMenu({ item }: { item: NavigationItem }) {
 	return (
 		<>
-			<NavigationMenuTrigger
-				className={cn(topLinkClass, "gap-0.5")}
-				render={<Link href={`/${item.title.toLowerCase()}`} />}
-			>
+			<NavigationMenuTrigger className={cn(topLinkClass, "gap-0.5")}>
 				{item.title}
 			</NavigationMenuTrigger>
 			<NavigationMenuContent className="min-w-56 p-2">
