@@ -11,7 +11,7 @@ export default async function CategoryNewsSection({
 	section: string;
 }) {
 	const { data: news }: { data: Article[] } = await fetch(
-		`${process.env.NEXT_PUBLIC_STRAPI_API_URL}/articles?category=${category}`,
+		`${process.env.NEXT_PUBLIC_MOCK_API}/articles?category=${category}`,
 	).then((res) => res.json());
 
 	return (

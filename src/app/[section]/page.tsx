@@ -10,7 +10,7 @@ export default async function Section({
 	const { section } = await params;
 
 	const res = await fetch(
-		`${process.env.NEXT_PUBLIC_STRAPI_API_URL}/sections/${section}/categories`,
+		`${process.env.NEXT_PUBLIC_MOCK_API}/sections/${section}/categories`,
 	);
 	const { data: categories } = await res.json();
 
