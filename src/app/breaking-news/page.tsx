@@ -2,7 +2,7 @@ import { Clock3, Radio } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Article } from "@/types/news";
-import BreakingDeskSection from "@/components/section/breaking-desk-section";
+import BreakingDeskSection from "@/components/news/breaking-desk-section";
 
 export default async function BreakingNews() {
 	const res = await fetch(

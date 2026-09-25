@@ -1,5 +1,5 @@
 import { Clock3 } from "lucide-react";
-import LatestNewsSection from "@/components/section/latest-news-section";
+import LatestNewsSection from "@/components/news/latest-news-section";
 import { Article } from "@/types/news";
 import Image from "next/image";
 import Link from "next/link";

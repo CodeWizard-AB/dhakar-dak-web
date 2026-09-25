@@ -1,5 +1,5 @@
-import CategoryNewsSection from "@/components/section/category-news-section";
-import HeaderSection from "@/components/section/header-section";
+import CategoryNewsSection from "@/components/news/category-news-section";
+import HeaderSection from "@/components/news/header-section";
 import { Category } from "@/types/news";
 
 export default async function Section({

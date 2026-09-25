@@ -19,7 +19,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 			suppressHydrationWarning
 			className={cn("h-full", "antialiased", inter.className)}
 		>
-			<body>
+			<body cz-shortcut-listen="true">
 				<Header />
 				<main className="container mx-auto px-4 sm:px-6">{children}</main>
 			</body>
