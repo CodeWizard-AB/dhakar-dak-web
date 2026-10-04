@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/layout/footer/footer";
 import Header from "@/components/layout/header/header";
+import { NextIntlClientProvider } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +22,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 			className={cn("h-full", "antialiased", inter.className)}
 		>
 			<body cz-shortcut-listen="true">
-				<Header />
-				<main className="container mx-auto px-4 sm:px-6">{children}</main>
-				<Footer />
+				<NextIntlClientProvider>
+					<Header />
+					<main className="container mx-auto px-4 sm:px-6">{children}</main>
+					<Footer />
+				</NextIntlClientProvider>
 			</body>
 		</html>
 	);

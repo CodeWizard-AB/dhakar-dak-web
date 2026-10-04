@@ -11,6 +11,7 @@ import {
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { headerSettings } from "@/lib/constants/navigation-data";
+import { setLocale } from "@/server/actions";
 
 export function TopBar() {
 	const { dateLabel, languages, utilityLinks, socialLinks } = headerSettings;
@@ -33,14 +34,21 @@ export function TopBar() {
 						{languages.map((language, index) => (
 							<span key={language.locale} className="flex items-center gap-2">
 								{index > 0 ? (
-									<Separator orientation="vertical" className="h-4 bg-border" />
+									<Separator
+										orientation="vertical"
+										className="h-4 mt-3 bg-border"
+									/>
 								) : null}
-								<Link
-									href={language.href}
-									className="whitespace-nowrap transition-colors hover:text-foreground"
-								>
-									{language.label}
-								</Link>
+								<form action={setLocale}>
+									<input type="hidden" name="locale" value={language.locale} />
+									<Button
+										type="submit"
+										variant="ghost"
+										className="whitespace-nowrap transition-colors hover:text-foreground p-0 hover:bg-transparent cursor:pointer"
+									>
+										{language.label}
+									</Button>
+								</form>
 							</span>
 						))}
 					</div>
